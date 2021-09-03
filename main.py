@@ -13,17 +13,6 @@ INPUT_PATH = os.path.join(DATA_PATH, 'input')
 OUTPUT_PATH = os.path.join(DATA_PATH, 'output')
 MODEL_DIR = 'models'
 
-# model = deepspeech.Model(os.path.join(MODEL_DIR, 'output_graph.pbmm'), 500)
-
-# logger.info(f'Sample rate: {model.sampleRate()}')
-
-# model.enableDecoderWithLM(
-#     os.path.join('models', 'lm.binary'),
-#     os.path.join('models', 'trie'),
-#     0.75,
-#     1.85
-# )
-
 def main():
 
     for file in os.listdir(INPUT_PATH):
