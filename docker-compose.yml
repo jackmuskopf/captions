@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+    captions:
+      image: "captions:latest"
+      command: ["python", "main.py"]
+      volumes:
+        - ./data:/mnt
